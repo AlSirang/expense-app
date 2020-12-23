@@ -9,7 +9,7 @@ export function Transaction({ transaction }) {
     const { deleteTransactions } = useContext(GlobalContext);
 
     return (
-        <li className={sign == "-" ? "minus" : "plus"}>
+        <li className={sign === "-" ? "minus" : "plus"}>
             {transaction.description}{" "}
             <span>
                 {sign} ${amount}
