@@ -14,6 +14,8 @@ export function AddTransaction() {
             amount: Number(amount),
         };
         addTransaction(transaction);
+        setDescription("");
+        setAmount(0);
     }
 
     return (
